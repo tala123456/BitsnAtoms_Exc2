@@ -1,0 +1,50 @@
+/** 
+ * A very basic CSS reset:
+ * More about CSS resets: https://meyerweb.com/eric/tools/css/reset/
+ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/** 
+ * Card sizing and positioning.
+ * Don't mess with this!
+ */
+.card {
+  width: 300px;
+  height: 540px;
+  margin: 40px auto 0 auto;
+}
+
+/** 
+ * Just some styling to make the card visible.
+ * Feel free to change this!
+ */
+
+.card {
+  background-color: blue;
+  color: #fff;
+  border-radius: 5px;
+  /*padding: 15px;*/
+}
+
+.card-top {
+  background-image: url("assets/sinners-header.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 115%;
+  height: 35%;
+  width: 100%;
+  border-radius: 4px;
+
+}
+
+.card-bottom {
+  padding: 15px;
+
+}
+video {
+  width: 100%;
+}

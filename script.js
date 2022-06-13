@@ -1,4 +1,5 @@
-var c, ctx, rain;
+var c, ctx, 
+rain;
 
 class Rain{
     constructor(x,y, L, v){
@@ -33,8 +34,8 @@ function loop(){
     rain.fall();
 }
 
-function setup(){
-    c = document.getElementbyId("card-bottom");
+function setup(){   
+    c = document.getElementsByClassName("card-bottom");
     ctx = c.getContex("2d");
     
     rain = new Rain(10,10,20,6)
@@ -42,23 +43,5 @@ function setup(){
     setInterval(loop,10)
 }
 
-var counterContainer = document.querySelector(".website-counter");
-var resetButton = document.querySelector("#reset");
-var visitCount = localStorage.getItem("page_view");
 
-// Check if page_view entry is present
-if (visitCount) {
-  visitCount = Number(visitCount) + 1;
-  localStorage.setItem("page_view", visitCount);
-} else {
-  visitCount = 1;
-  localStorage.setItem("page_view", 1);
-}
-counterContainer.innerHTML = visitCount;
-
-// Adding onClick event listener
-resetButton.addEventListener("click", () => {
-  visitCount = 1;
-  localStorage.setItem("page_view", 1);
-  counterContainer.innerHTML = visitCount;
-});
+// ich habe wirklich alles probiert, aber es ist mir nicht möglich den regen anzuzeigen obwohl ich die card eigentlich mit der class gepickt habe 
